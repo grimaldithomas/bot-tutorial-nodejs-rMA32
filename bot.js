@@ -16,7 +16,7 @@ function respond() {
                 "MIA","BUF","SF","WAS","NYJ","TB"]
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(League Name: EMB2016 | League Password: EMB2016);
+    postMessage("League Name: EMB2016 | League Password: EMB2016 | Caps Sensitive");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
