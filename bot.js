@@ -36,7 +36,7 @@ function respond() {
   } 
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://daddyleagues.com/emb16/rules Tournament Rules, Nanos Allowed, No Fake Punt/FG, No Turbo Blitzing");
+    postMessage("http://daddyleagues.com/emb16/rules                         Tournament Rules, Nanos Allowed, No Fake Punt/FG, No Turbo Blitzing");
     this.res.end();
   }
   else if(request.text && botRegexAd.test(request.text)) {
