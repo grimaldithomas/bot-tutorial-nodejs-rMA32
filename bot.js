@@ -34,12 +34,12 @@ function respond() {
     postMessage("The commissioners are Riot, Sixth, Killa, and Gotem");
     this.res.end();
   } 
-  else if(request.text && botRegexAd.test(request.text)) {
+  else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/emb16/rules Tournament Rules, Nanos Allowed, No Fake Punt/FG, No Turbo Blitzing");
     this.res.end();
   }
-  else if(request.text && botRegexRules.test(request.text)) {
+  else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
     this.res.end();
