@@ -21,7 +21,7 @@ function respond() {
   }              
   else if(request.text && botRegexLG.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("This is Case Sensitive                            LG: EMB16 LG PW: EMB16");
+    postMessage("This is Case Sensitive                            League Name: EMB16                            League PW: EMB16");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
