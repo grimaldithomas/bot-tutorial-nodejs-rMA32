@@ -19,8 +19,8 @@ function respond() {
     this.res.writeHead(200);
     postMessage(cool());
     this.res.end();        
-                
-  if(request.text && botRegexLG.test(request.text)) {
+  }              
+  else if(request.text && botRegexLG.test(request.text)) {
     this.res.writeHead(200);
     postMessage("League Name: EMB2016");
     this.res.end();
