@@ -21,7 +21,7 @@ function respond() {
   }              
   else if(request.text && botRegexLG.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("League Name: EMB16 | League PW: EMB16 |Case Sensitive");
+    postMessage("League Name: EMB16" /n"League PW: EMB16" /n "Case Sensitive");
     this.res.end();
   } 
   else if(request.text && botRegexDL.test(request.text)) {
