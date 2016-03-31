@@ -42,7 +42,7 @@ function respond() {
   }
   else if(request.text && botRegexAd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("EMB Advances every 48hrs at        10 PM.");
+    postMessage("EMB Advances every 48hrs at        10 PM EST. Games need to be started before 9PM EST");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
@@ -91,7 +91,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("/league info, /DDL, /commish, /rules, /advance, /payout, /Schedule, /Duck, /DPL, /bum, /champ, /shrug, /eyes, /commands, /draft");
+    postMessage("/league info, /DDL, /commish, /rules, /advance, /payout, /Schedule, /Duck, /DPL, /bum,   /Champ, /shrug, /eyes, /commands, /draft");
     this.res.end();
   }
   else if(request.text && botRegexDr.test(request.text)) {
