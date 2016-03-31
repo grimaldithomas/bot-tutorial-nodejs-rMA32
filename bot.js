@@ -70,7 +70,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("The reigning Super Bowl Champ is SixthSense");
+    postMessage("The reigning Super Bowl hamp is SixthSense. Will you be next?");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
