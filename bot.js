@@ -91,7 +91,7 @@ function respond() {
   }
   else if(request.text && botRegexCC.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("/league info, /DDL, /commish, /rules, /advance, /payout, /Schedule, /Duck, /DPL, /bum,   /Champ, /shrug, /eyes, /commands, /draft");
+    postMessage("/league info, /DDL, /commish, /rules, /advance, /payout, /Schedule, /update/, /paypal, /Duck, /DPL, /bum,   /Champ, /shrug, /eyes, /commands, /draft");
     this.res.end();
   }
   else if(request.text && botRegexDr.test(request.text)) {
