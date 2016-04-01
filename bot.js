@@ -116,7 +116,7 @@ function respond() {
   }
   else if(request.text && botRegexUd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Currently Picked: Julio Jones, Von Miller, Aj Green, Kalil Mack, Patrick Peterson, Antonio Brown, Cam Newton, Luke Keuchly, Sammy Watkins, Deandre Hopkins, Breshad Perriman, Anthony Barr, Bruce Irvin, Russell WIlson, Kevin White, Aaron Donald, Andrew Luck, OBJ | Fear is on the clock, followed by AJ, Gotem, and Rich" );
+    postMessage("Currently Picked: Julio Jones, Von Miller, Aj Green, Kalil Mack, Patrick Peterson, Antonio Brown, Cam Newton, Luke Keuchly, Sammy Watkins, Deandre Hopkins, Breshad Perriman, Anthony Barr, Bruce Irvin, Russell WIlson, Kevin White, Aaron Donald, Andrew Luck, OBJ, JJ Watt |  AJ is on the clock (10PM EST, Thurs), Gotem, and Rich" );
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
