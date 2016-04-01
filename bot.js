@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/; botRegexLG = /^\/leagueinfo/i;botRegexDL = /^\/DDL/i;botRegexCS = /^\/commish/;botRegexRules = /^\/rules/
       botRegexAd=/^\/advance/;botRegexGTA = /^\/payout/; botRegexSC = /^\/Schedule/i; botDuck = /^\/duck/;
       botRegexP = /^\/DPL/i;  botRegexTw = /^\/bum/i; botRegexSb = /^\/Champ/; botRegexSh = /^\/shrug/; botRegexWk = /^\/eyes/; botRegexCC = /^\/commands/;
-      botRegexDr =/^\/Draft/i;botRegexBt =/^\/bot/i; botRegexHl=/^\/hello/i; botRegexPk=/^\/poke/i;botRegexUd=/^\/update/i;
+      botRegexDr =/^\/Draft/i;botRegexBt =/^\/bot/i; botRegexHl=/^\/hello/i; botRegexPk=/^\/poke/i;botRegexUd=/^\/update/i;botRegexPp=/^\/paypal/i;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -118,6 +118,11 @@ function respond() {
     this.res.writeHead(200);
     postMessage("Currently Picked: Julio Jones, Von Miller, Aj Green, Kalil Mack, Patrick Peterson, Antonio Brown, Cam Newton, Luke Keuchly, Sammy Watkins, Deandre Hopkins, Breshad Perriman, Anthony Barr, Bruce Irvin, Russell WIlson, Kevin White, Aaron Donald, Andrew Luck, OBJ, JJ Watt |  AJ is on the clock (10PM EST, Thurs), Gotem, and Rich" );
     this.res.end();
+  }   
+  else if(request.text && botRegexPp.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("The paypal is maddenemb16@gmail.com, send via friends & family");
+    this.res.end(); 
   }
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
