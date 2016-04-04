@@ -116,7 +116,7 @@ function respond() {
   }
   else if(request.text && botRegexUd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Currently Picked Round 2: Allen Robinson,Martavis Bryant, Brandon Cooks, Demaryius Thomas, Verett, Rodgers, Ansah, Clowney, Mariota, Beasley, Shazier|  Fear is on the clock." );
+    postMessage("Currently Picked Round 2: Allen Robinson,Martavis Bryant, Brandon Cooks, Demaryius Thomas, Verett, Rodgers, Ansah, Benjamin, Clowney, Mariota, Beasley, Shazier, Norman|  Dolomite is on the clock." );
     this.res.end();
   }   
   else if(request.text && botRegexPp.test(request.text)) {
