@@ -122,7 +122,12 @@ function respond() {
   else if(request.text && botRegexPp.test(request.text)) {
     this.res.writeHead(200);
     postMessage("The paypal is maddenemb16@gmail.com, send via friends & family");
-    this.res.end(); 
+    this.res.end();
+  }
+  else if(request.text && botRegexMj.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://pbs.twimg.com/profile_images/646008281798938624/ZUSWwFj_.jpg");
+    this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
