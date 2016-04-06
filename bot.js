@@ -116,7 +116,7 @@ function respond() {
   }
   else if(request.text && botRegexUd.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("IVY MAKE YOUR PICK ALREADY." );
+    postMessage("LEAVE ME THE FUCK ALONE. LET"S ASSUME IT"S ON IVY. IVY MAKE YOUR PICK ALREADY." );
     this.res.end();
   }   
   else if(request.text && botRegexPp.test(request.text)) {
