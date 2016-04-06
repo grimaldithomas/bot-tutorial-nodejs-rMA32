@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/; botRegexLG = /^\/leagueinfo/i;botRegexDL = /^\/DDL/i;botRegexCS = /^\/commish/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/; botRegexLG = /^\/leagueinfo/i;botRegexDL = /^\/DDL/i;botRegexCS = /^\/commish/;botRegexRules = /^\/rules/;
       botRegexAd=/^\/advance/;botRegexGTA = /^\/payout/; botRegexSC = /^\/Schedule/i; botDuck = /^\/duck/;
       botRegexP = /^\/DPL/i;  botRegexTw = /^\/bum/i; botRegexSb = /^\/Champ/; botRegexSh = /^\/shrug/; botRegexWk = /^\/eyes/; botRegexCC = /^\/commands/;
       botRegexDr =/^\/Draft/i;botRegexBt =/^\/bot/i; botRegexHl=/^\/hello/i; botRegexPk=/^\/poke/i;botRegexUd=/^\/update/i;botRegexPp=/^\/paypal/i;botRegexMj=/^\/jordan/i;
