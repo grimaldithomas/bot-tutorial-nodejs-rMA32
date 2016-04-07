@@ -5,10 +5,10 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;botRegexLG = /^\/leagueinfo/i;botRegexDL = /^\/DDL/i;botRegexCS = /^\/commish/;botRegexRules = /^\/rules/;
-      botRegexAd = /^\/advance/;botRegexGTA = /^\/payout/;botRegexSC = /^\/Schedule/i;botDuck = /^\/duck/;
-      botRegexP = /^\/DPL/i;botRegexTw = /^\/bum/i;botRegexSb = /^\/Champ/;botRegexSh = /^\/shrug/;botRegexWk = /^\/eyes/;botRegexCC = /^\/commands/;
-      botRegexDr =/^\/Draft/i;botRegexBt =/^\/bot/i;botRegexHl=/^\/hello/i;botRegexPk=/^\/poke/i;botRegexUd=/^\/update/i;botRegexPp=/^\/paypal/i;botRegexMj=/^\/jordan/i;
+      botRegex=/^\/cool guy/;botRegexLG=/^\/leagueinfo/i;botRegexDL=/^\/DDL/i;botRegexCS=/^\/commish/;botRegexRules=/^\/rules/;
+      botRegexAd=/^\/advance/;botRegexGTA=/^\/payout/;botRegexSC=/^\/Schedule/i;botDuck=/^\/duck/;
+      botRegexP=/^\/DPL/i;botRegexTw=/^\/bum/i;botRegexSb=/^\/Champ/;botRegexSh=/^\/shrug/;botRegexWk=/^\/eyes/;botRegexCC=/^\/commands/;
+      botRegexDr=/^\/Draft/i;botRegexBt=/^\/bot/i;botRegexHl=/^\/hello/i;botRegexPk=/^\/poke/i;botRegexUd=/^\/update/i;botRegexPp=/^\/paypal/i;botRegexMj=/^\/jordan/i;
       botRegexSiege = /^\/siege/
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -124,9 +124,9 @@ function respond() {
     postMessage("The paypal is maddenemb16@gmail.com, send via friends & family");
     this.res.end();
   }
-  else if(request.text && botRegexMj.test(request.text)) {
+ else if(request.text && botRegexPp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://pbs.twimg.com/profile_images/646008281798938624/ZUSWwFj_.jpg");
+    postMessage("https://si.wsj.net/public/resources/images/AR-AM060_JORDAN_8S_20160203123002.jpg");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {
